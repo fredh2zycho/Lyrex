@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark theme variant -->
+    <style name="Theme.Lyrex" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary Colors (Lighter Indigo for dark mode) -->
+        <item name="colorPrimary">@color/indigo_200</item>
+        <item name="colorPrimaryVariant">@color/indigo_400</item>
+        <item name="colorOnPrimary">@color/gray_900</item>
+
+        <!-- Secondary Colors (Softer Purple) -->
+        <item name="colorSecondary">@color/purple_200</item>
+        <item name="colorSecondaryVariant">@color/purple_300</item>
+        <item name="colorOnSecondary">@color/gray_900</item>
+
+        <!-- Surface Colors -->
+        <item name="colorSurface">@color/gray_900</item>
+        <item name="colorOnSurface">@color/gray_100</item>
+
+        <!-- Status Bar (Slightly darker than surface) -->
+        <item name="android:statusBarColor">@color/gray_800</item>
+
+        <!-- Elevation Overrides -->
+        <item name="elevationOverlayColor">@color/indigo_800_translucent</item>
+    </style>
+
+    <!-- Dark Mode FAB -->
+    <style name="Widget.Lyrex.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/purple_200</item>
+        <item name="tint">@color/gray_900</item>
+    </style>
+
+    <!-- Dark Mode Buttons -->
+   <style name="Widget.Lyrex.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/indigo_200</item>
+        <item name="android:textColor">@color/gray_900</item>
+    </style>
+
+</resources>

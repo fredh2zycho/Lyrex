@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <EditText
+        android:id="@+id/etSetlistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Setlist Name" />
+
+    <ListView
+        android:id="@+id/setlistListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabShareQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Share QR"
+            android:textColor="#FFFFFFFF"
+            app:backgroundTint="#FF9C27B0"
+            app:icon="@drawable/ic_qr_code_24"
+            app:iconTint="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btnCreateSetlist"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:backgroundTint="#FF3F51B5"
+            android:minWidth="140dp"
+            android:text="CREATE SETLIST"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

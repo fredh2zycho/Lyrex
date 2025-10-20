@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Rename Setlist"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSetlistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter setlist name"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title Field -->
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="textCapWords" />
+
+        <!-- Preview/Edit Toggle Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previewButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="previewLyric"
+                android:text="Preview"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <Button
+                android:id="@+id/editButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="previewLyric"
+                android:text="Edit"
+                android:textColor="@android:color/holo_blue_dark"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Content Container -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="300dp">
+
+            <!-- Lyric Content EditText -->
+            <EditText
+                android:id="@+id/contentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:gravity="top|start"
+                android:hint="Enter your lyrics here...&#xA;&#xA;Try using section headers like:&#xA;[VERSE]&#xA;[CHORUS]&#xA;[PRE-CHORUS]&#xA;[BRIDGE]&#xA;[REFRAIN]"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minHeight="300dp"
+                android:padding="12dp"
+                android:scrollbars="vertical" />
+
+            <!-- Preview TextView (Initially Hidden) -->
+            <TextView
+                android:id="@+id/previewTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9F9F9"
+                android:lineSpacingExtra="4dp"
+                android:minHeight="300dp"
+                android:padding="12dp"
+                android:scrollbars="vertical"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <!-- Performance/Export Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E91E63"
+                android:onClick="performanceMode"
+                android:text="🎤 PERFORM"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="exportLyric"
+                android:text="💾 EXPORT"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clearButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:onClick="clearContent"
+                android:text="Clear"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:onClick="saveLyric"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:text="SAVE"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

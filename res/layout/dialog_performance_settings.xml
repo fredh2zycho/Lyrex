@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="24dp" >
+
+    <!-- Font Size Section -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Font Size"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:max="36"
+        android:progress="16" />
+
+    <TextView
+        android:id="@+id/tv_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="16sp"
+        android:textSize="14sp" />
+
+    <!-- Scroll Speed Section -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Scroll Speed"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekbar_scroll_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:max="19"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/tv_scroll_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Speed: 1"
+        android:textSize="14sp" />
+
+    <!-- Auto-Scroll Toggle -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Auto-Scroll"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_auto_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.Lyrex" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary Colors (Indigo) -->
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="colorPrimaryVariant">@color/indigo_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors (Purple) -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Surface Colors -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Component Styles -->
+        <item name="buttonStyle">@style/Widget.Lyrex.Button</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Lyrex.FAB</item>
+    </style>
+
+    <!-- FAB Style -->
+    <style name="Widget.Lyrex.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/purple_500</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="Widget.Lyrex.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/indigo_500</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,9 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cache directory for temporary files (like QR images) -->
+    <cache-path name="shared_qr" path="." />
+
+    <!-- Optional: external storage if you plan to share other files -->
+    <external-path name="external_files" path="." />
+
+</paths>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <!-- Setlist Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/tv_setlist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Setlist Name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_song_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="0 songs"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_share_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="SHARE QR"
+            android:textColor="#FFFFFFFF"
+            app:backgroundTint="#FF9C27B0"
+            app:icon="@drawable/ic_qr_code"
+            app:iconTint="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btn_start_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:backgroundTint="#FF3F51B5"
+            android:minWidth="160dp"
+            android:text="START PERFORMANCE"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Songs List -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Songs in Setlist:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_setlist_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical" />
+
+    <!-- Empty State -->
+
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No songs in this setlist"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

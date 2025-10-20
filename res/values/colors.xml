@@ -1,0 +1,58 @@
+<resources>
+
+    <color name="gray_900">#FF121212</color>
+    <!-- Purple (keep existing brand colors) -->
+    <color name="purple_200">#FFBB86FC</color> <!-- Light Purple -->
+    <color name="purple_500">#FF6200EE</color> <!-- Primary Purple -->
+    <color name="purple_700">#FF3700B3</color> <!-- Dark Purple -->
+
+
+    <!-- Replace Teal with Professional Alternatives -->
+    <color name="indigo_200">#FF9FA8DA</color> <!-- Light Indigo (Accent) -->
+    <color name="indigo_500">#FF283593</color> <!-- Primary Indigo (Replaces Teal 500) -->
+    <color name="indigo_700">#FF1A237E</color> <!-- Dark Indigo (Replaces Teal 700) -->
+	
+	<!-- New Primary colors -->
+	<color name="colorPrimary">#FF6B8E</color> <!-- Coral pink -->
+	<color name="colorPrimaryDark">#D45B77</color>
+	<color name="colorAccent">#4ECDC4</color> <!-- Teal -->
+	
+	<!-- Background and surface -->
+	<color name="background">#FAFAFA</color>
+	<color name="surface">#FFFFFF</color>
+	
+	<!-- Text colors -->
+	<color name="text_primary">#212121</color>
+	<color name="text_secondary">#757575</color>
+	<color name="text_hint">#BDBDBD</color>
+	
+	<!-- Additional colors -->
+	<color name="card_stroke">#EEEEEE</color>
+	<color name="divider">#E0E0E0</color>
+	<color name="success">#4CAF50</color>
+	<color name="warning">#FF9800</color>
+	
+	<color name="card_background">#FFFFFF</color>
+	<color name="selected_background">#E3F2FD</color>
+	<color name="selected_text">#1976D2</color>
+
+
+    <!-- Neutrals -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_600">#FF757575</color> <!-- Secondary Text -->
+    <color name="gray_100">#FFF5F5F5</color> <!-- Background -->
+
+    <color name="green_accent">#4CAF50</color>
+    <color name="red_accent">#F44336</color>
+
+    <!-- Section Highlight Colors - Match your highlighting scheme -->
+    <color name="highlight_chorus">#F44336</color> <!-- Red for CHORUS -->
+    <color name="highlight_verse">#2196F3</color> <!-- Blue for VERSE -->
+    <color name="highlight_prechorus">#4CAF50</color> <!-- Green for PRE-CHORUS -->
+    <color name="highlight_bridge">#9C27B0</color> <!-- Purple for BRIDGE -->
+    <color name="highlight_refrain">#FF9800</color> <!-- Orange for REFRAIN -->
+    <color name="highlight_intro">#78909C</color> <!-- Blue Gray for INTRO -->
+    <color name="highlight_outro">#A1887F</color> <!-- Brown for OUTRO -->
+
+</resources>

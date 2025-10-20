@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+
+    <!-- Header Container with Box Background -->
+
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_box_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <!-- Back Button - Left Side -->
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circular_blue_background"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white" />
+
+        <!-- Title - Center -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="My Setlists"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Create New Button - Right Side -->
+
+        <Button
+            android:id="@+id/btn_create_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New" />
+    </LinearLayout>
+
+    <!-- Delete Button Container -->
+
+    <LinearLayout
+        android:id="@+id/delete_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="DELETE"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Setlists List -->
+
+    <ListView
+        android:id="@+id/lv_setlists"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/delete_button_container"
+        android:layout_below="@id/header_container"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Empty State -->
+
+    <TextView
+        android:id="@+id/tv_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No setlists created yet!\n\nCreate your first setlist to organize songs for performances."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

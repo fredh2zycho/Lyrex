@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Add this to your styles.xml -->
+    <style name="Theme.Lyrex.Translucent" parent="Theme.AppCompat.DayNight">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Button.Icon" parent="Widget.AppCompat.Button">
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+</resources>

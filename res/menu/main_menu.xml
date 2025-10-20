@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sort_menu" android:icon="@drawable/ic_sort" android:title="Sort" app:showAsAction="always"/>
+    <item android:id="@+id/view_setlists_menu" android:icon="@drawable/ic_playlist_play" android:title="My Setlists" app:showAsAction="always"/>
+
+</menu>
